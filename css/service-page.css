@@ -6565,104 +6565,6 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
-.header__btn-menu i {
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' d='M2 11.995a.896.896 0 0 0 .895.896H13.2a.894.894 0 0 0 .57-1.49.895.895 0 0 0-.57-.292H2.895a.885.885 0 0 0-.895.886Zm0-6.109a.897.897 0 0 0 .895.896H21.2a.895.895 0 0 0 .57-1.49A.895.895 0 0 0 21.2 5H2.895A.884.884 0 0 0 2 5.886Zm0 12.218a.897.897 0 0 0 .895.896h18.204a.895.895 0 0 0 .57-1.49.894.894 0 0 0-.57-.292H2.895a.883.883 0 0 0-.895.886Z'/%3E%3C/svg%3E");
-}
-
-.header__nav-wrap {
-  position: relative;
-  z-index: 1;
-  background-color: #2d2977;
-}
-
-.header__menu {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 83.33333333%;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.header__menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.header__menu ul > *:last-child a::after {
-  display: none;
-}
-
-.header__menu ul li {
-  position: relative;
-  list-style-type: none;
-}
-
-.header__menu ul li a {
-  position: relative;
-  display: block;
-  padding: 12px 24px;
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 8px;
-  -webkit-transition: color 0.2s ease-in-out 0ms, background-color 0.2s ease-in-out 0ms;
-  transition: color 0.2s ease-in-out 0ms, background-color 0.2s ease-in-out 0ms;
-  cursor: pointer;
-}
-
-.header__menu ul li a:before {
-  display: none;
-}
-
-.header__menu ul li a::after {
-  position: absolute;
-  top: 50%;
-  right: -2px;
-  content: "";
-  width: 4px;
-  height: 4px;
-  background-color: #393996;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.header__menu ul li a:hover {
-  color: var(--elem-hvr);
-  background-color: #393996;
-}
-
-.header__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 16.66666667%;
-}
-
-.header__btn .btn-main {
-  padding: 13px 24px;
-  height: 40px;
-}
-
 .hdr--fixed {
   position: fixed;
   top: 0;
@@ -6736,34 +6638,70 @@ html.with-fancybox header.hdr--fixed {
   padding-bottom: 32px;
 }
 
-.m-info__body {
+.service__body {
   margin: 8px;
   max-width: 768px;
   padding: 16px;
 }
 
-.m-info__pic {
+.service__pic {
   margin-bottom: 24px;
   height: 96px;
 }
 
-.m-info__pic img {
+.service__pic img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.m-info__text {
+.service__text {
   margin-bottom: 32px;
 }
 
-.m-info__text p {
+.service__text p {
   font-size: 13px;
   line-height: 130%;
 }
 
+.service__form-wrap {
+  position: relative;
+  z-index: 2;
+  background-color: var(--main-clr2);
+  padding: 24px 16px;
+}
+
+.service__form-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.service__form-title span {
+  color: inherit;
+}
+
+.service__check-lbl {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.service__check-lbl span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* ↑ ---- */
+
+/* ↓ Таблица цен */
 
 .table {
   width: 100%;
@@ -6800,9 +6738,167 @@ html.with-fancybox header.hdr--fixed {
   background-color: #ebebf5;
 }
 
-.pop-table {
-  margin-bottom: 24px;
+/* ↑ ---- */
+
+/* == БЛОК « КАТЕГОРИИ УСЛУГ » */
+
+/* ↓ Основа */
+
+.categories__sct {
+  background-color: var(--main-clr4);
 }
+
+.categories__row {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.categories__wrap {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 8px;
+  width: 100%;
+}
+
+.no-webp .categories__card{
+  background-image: url("../img/pic/bg/card-bg-lines.png"); }
+
+.categories__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  background-color: var(--main-clr2);
+  -webkit-transition: background-color 0.2s ease-in-out 0ms;
+  transition: background-color 0.2s ease-in-out 0ms;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 0%;
+}
+
+.categories__card:hover {
+  background-color: #fff;
+}
+
+.categories__card:hover .categories__card-title p {
+  color: var(--btn-hvr);
+}
+
+.categories__card:hover .categories__card-btn {
+  border-color: var(--btn-hvr);
+}
+
+.categories__card:hover .pic-wrap {
+  -webkit-transform: translateX(4px);
+      -ms-transform: translateX(4px);
+          transform: translateX(4px);
+}
+
+.categories__card::before {
+  display: none;
+}
+
+.categories__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.categories__card-title {
+  position: relative;
+  z-index: 2;
+  padding: 12px 0px 12px 12px;
+}
+
+.categories__card-title span {
+  color: #ACA9E9;
+}
+
+.categories__card-title p {
+  -webkit-transition: color 0.2s ease-in-out 0ms;
+  transition: color 0.2s ease-in-out 0ms;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+  color: white;
+}
+
+.categories__card-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: border 0.2s ease-in-out 0ms;
+  transition: border 0.2s ease-in-out 0ms;
+  width: 32px;
+  height: 24px;
+  background-color: white;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.categories__card-btn i {
+  -webkit-transition: all 0.2s ease-in-out 0ms;
+  transition: all 0.2s ease-in-out 0ms;
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23F25713' d='M20.915 11.884 15.98 7.053c-3.443-3.337-4.714-4.548-5.18-4.969L10.714 2l-.095.084-.583.569c-.222.21-.413.4-.55.547l-.086.084.096.095c.381.39 1.06 1.053 2.383 2.347l5.52 5.358-14.272.074H3v1.737h14.377l-5.508 5.358c-1.43 1.39-2.119 2.052-2.384 2.357l-.095.095.095.085c.127.136.297.315.52.515.222.2.529.516.635.61l.095.085.085-.084c1.133-1.053 8.305-8.053 10.116-9.853l.064-.116-.085-.063Z'/%3E%3C/svg%3E");
+}
+
+.categories__card-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categories__card-pic .pic-wrap {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: opacity 0.2s ease-in-out 0ms, -webkit-transform 0.2s ease-in-out 0ms;
+  transition: opacity 0.2s ease-in-out 0ms, -webkit-transform 0.2s ease-in-out 0ms;
+  transition: transform 0.2s ease-in-out 0ms, opacity 0.2s ease-in-out 0ms;
+  transition: transform 0.2s ease-in-out 0ms, opacity 0.2s ease-in-out 0ms, -webkit-transform 0.2s ease-in-out 0ms;
+}
+
+/* ↑ ---- */
+
+/* == КОНЕЦ БЛОКА « КАТЕГОРИИ УСЛУГ » */
 
 /* == БЛОК «ПОДВАЛ» */
 
@@ -6823,30 +6919,6 @@ html.with-fancybox header.hdr--fixed {
   margin-bottom: 16px;
 }
 
-.footer__logo-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  width: 100%;
-  margin-bottom: 24px;
-}
-
-.footer__brand {
-  width: 100px;
-  margin-bottom: 24px;
-}
-
-.footer__brand:before {
-  display: none;
-}
-
 .footer__desc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6855,22 +6927,7 @@ html.with-fancybox header.hdr--fixed {
 
 .footer__desc p {
   font-size: 8px;
-  color: var(--text-lgt3);
-}
-
-.footer__nav-wrap {
-  width: 100%;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.footer__nav-wrap > * {
-  margin-bottom: 24px;
-}
-
-.footer__nav-wrap > *:last-child {
-  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .footer__links {
@@ -6894,11 +6951,7 @@ html.with-fancybox header.hdr--fixed {
 .footer__links a {
   font-size: 12px;
   line-height: 130%;
-  color: var(--text-lgt2);
-}
-
-.footer__sct2 {
-  border-top: 1px solid var(--gr2);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__row2 {
@@ -6951,11 +7004,11 @@ html.with-fancybox header.hdr--fixed {
 
 .footer__contacts .cnt-tme p {
   white-space: nowrap;
-  color: var(--text-lgt4);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__contacts .cnt-adr p {
-  color: var(--text-lgt4);
+  color: white;
 }
 
 /* ↑ ---- */
@@ -7316,8 +7369,49 @@ html.with-fancybox header.hdr--fixed {
     padding-bottom: 48px;
   }
 
-  .m-info__text p {
+  .service__text p {
     font-size: 14px;
+  }
+
+  .service__form-title {
+    font-size: 16px;
+  }
+
+  .service__form-title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .service__form-title span {
+    margin-left: 6px;
+  }
+
+  .service__form-body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .service__form-body > * {
+    margin-right: 16px;
+  }
+
+  .service__form-body > *:last-child {
+    margin-right: 0;
+  }
+
+  .service__form-body .form-base__inputs {
+    margin-bottom: 0;
+  }
+
+  .service__form-body .form-base__btn {
+    margin-bottom: 0;
   }
 
   .table td,
@@ -7325,22 +7419,35 @@ html.with-fancybox header.hdr--fixed {
     font-size: 14px;
   }
 
-  .footer__logo-wrap {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .categories__row {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
-  .footer__brand {
-    margin-bottom: 0;
-    margin-right: 24px;
+  .categories__wrap {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .categories__card-title p {
+    font-size: 18px;
+  }
+
+  .categories__card-pic .pic-wrap {
+    width: 120px;
+    height: 120px;
+  }
+
+  .ctg--w {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .ctg--b {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
   }
 
   .footer__links a {
@@ -7396,6 +7503,14 @@ html.with-fancybox header.hdr--fixed {
   .sec-nav__nav-items ul li a {
     padding: 16px;
     font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .service__form-body > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
@@ -7598,17 +7713,58 @@ html.with-fancybox header.hdr--fixed {
     line-height: 130%;
   }
 
-  .m-info__pic {
+  .service__pic {
     height: 160px;
   }
 
-  .m-info__text p {
+  .service__text p {
     font-size: 16px;
+  }
+
+  .service__form-wrap {
+    padding: 32px 56px;
+  }
+
+  .service__form-title {
+    font-size: 20px;
   }
 
   .table td,
   .table th {
     font-size: 16px;
+  }
+
+  .categories__wrap {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .categories__card-title {
+    padding: 16px 0px 16px 16px;
+  }
+
+  .categories__card-title p {
+    font-size: 20px;
+  }
+
+  .categories__card-btn {
+    width: 64px;
+    height: 48px;
+  }
+
+  .categories__card-btn i {
+    width: 16px;
+    height: 16px;
+  }
+
+  .categories__card-pic .pic-wrap {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ctg--t {
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
   }
 
   .footer__row {
@@ -7621,25 +7777,8 @@ html.with-fancybox header.hdr--fixed {
     margin-bottom: 0;
   }
 
-  .footer__logo-wrap {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: auto;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-
   .footer__desc p {
     font-size: 11px;
-  }
-
-  .footer__nav-wrap {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    width: auto;
   }
 
   .footer__links a {
@@ -7706,12 +7845,6 @@ html.with-fancybox header.hdr--fixed {
   }
 }
 
-@media (min-width: 1400px) {
-  .header__menu ul li a {
-    padding: 12px 32px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .animate__animated {
     /*CSS transitions*/
@@ -7748,3 +7881,5 @@ html.with-fancybox header.hdr--fixed {
     background-color: var(--f-button-hover-bg);
   }
 }
+
+.webp .categories__card{ background-image: url(../img/pic/bg/card-bg-lines.webp); }

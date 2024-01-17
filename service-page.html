@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/service-page.min.css?_v=20240117075612">
+	<link rel="stylesheet" href="css/service-page.min.css?_v=20240117174048">
 
 	<title>«Truck Repair» — Ремонт двигателя</title>
 
@@ -102,27 +102,6 @@
 
 </header>
 
-<nav class="header__nav-wrap" data-fsb>
-	<div class="cnt header__nav-cnt">
-		<div class="row">
-			<div class="header__menu">
-				<ul>
-					<li><a data-scroll href="#services">Услуги</a></li>
-					<li><a data-scroll href="#about">О нас</a></li>
-					<li><a data-scroll href="#team">Команда</a></li>
-					<li><a data-scroll href="#reviews">Отзывы</a></li>
-					<li><a data-scroll href="#contacts">Контакты</a></li>
-				</ul>
-			</div>
-			<div class="header__btn">
-				<button class="btn-main hdr-btn" data-fancybox data-src="#modal-clb">
-					Заказать звонок
-				</button>
-			</div>
-		</div>
-	</div>
-</nav>
-
 	<main class="m-cnt">
 		<section class="breadcrumbs">
 	<div class="cnt">
@@ -139,18 +118,18 @@
 	<div class="cnt">
 		<div class="row service__row">
 
-			<div class="m-info__pic">
+			<div class="service__pic">
 				<picture><source srcset="img/pic/services/popup/1.webp" type="image/webp"><img src="img/pic/services/popup/1.jpg" alt=""></picture>
 			</div>
 
-			<div class="m-info__text">
+			<div class="service__text">
 				<p>Диагностика двигателя – быстрый и достаточно надежный вариант проверки его работоспособности,
 					выявления существующих проблем и направления на своевременный ремонт. Современное оборудование дает
 					возможность выполнения качественной и точной диагностики даже самых небольших неполадок. Но, именно
 					они далее могут привести к значительно более серьезным неисправностям.</p>
 			</div>
 
-			<div class="m-info__table">
+			<div class="service__table">
 				<div class="popup-text-wr">
 					<h4>Цены на услуги диагностики двигателя</h4>
 					<table class="table pop-table">
@@ -191,161 +170,221 @@
 				</div>
 			</div>
 
-			<div class="m-info__form">
-				<div class="form aboutus__form">
-
-					<div class="form__title">
-						<p>У вас есть вопросы?
-							<span>Давайте мы скорей на них ответим!</span>
-						</p>
-					</div>
-
-					<form action="#" class="form__wrap" method="POST" id="form-service" enctype="multipart/form-data">
-
-						<div class="form__inputs">
-
-							<div class="input-box">
+			<div class="service__form-wrap">
+				<div class="form service__form">
+					<p class="service__form-title">
+						У вас есть вопросы? <span>Давайте мы скорей на них ответим!</span>
+					</p>
+					<form action="" class="form-base service__form-body" method="POST" id="form-aboutus"
+						enctype="multipart/form-data">
+						<div class="form-base__inputs">
+							<label class="input-box form-base__inp">
 								<input type="tel" name="tel" placeholder="Телефон" class="j-inp-phn" required>
-							</div>
-
+							</label>
 						</div>
-
-						<button type="submit" class="btn-main">
-							Заказать звонок
-							<i class="ic ic-r"></i>
-						</button>
-
-						<div class="check-wrap form__check">
-							<div>
-								<label class="input-check-lbl" for="checkboxChkFormCall">
-									Вы согласны с условиями
-								</label>
-								<a href="#"> политики конфиденциальностих</a>
+						<button type="submit" class="btn-main form-base__btn">Отправить заявку</button>
+						<div class="form-base__check">
+							<div class="form-base__check-lbl  service__check-lbl" for="checkAbtUs">
+								<input class="input-check j-inp-chk" type="checkbox" value="" id="checkAbtUs" checked>
+								Вы соглашаетесь на
+								<span class="j-chk-dsb">условия обработки персональных данных</span>
 							</div>
 						</div>
-
 					</form>
-
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
+		<section id="services" class="categories__sct">
+	<div class="cnt">
+		<div class="row categories__row">
+
+			<div class="main__title">
+				<h2>Больше услуг, <span>которые можем предложить</span>
+				</h2>
+			</div>
+
+			<div class="categories__wrap ">
+
+				<a href="service-page.html" class="categories__card">
+					<div class="categories__card-info">
+						<div class="categories__card-title">
+							<span>Ремонт</span>
+							<p>Двигатель</p>
+						</div>
+						<div class="categories__card-btn">
+							<i class="ic"></i>
+						</div>
+					</div>
+					<div class="categories__card-pic">
+						<div class="pic-wrap">
+							<picture><source srcset="img/pic/services/1.webp" type="image/webp"><img src="img/pic/services/1.png" alt="pic"></picture>
+						</div>
+					</div>
+				</a>
+
+				<a href="service-page.html" class="categories__card ">
+					<div class="categories__card-info">
+						<div class="categories__card-title">
+							<span>Ремонт</span>
+							<p>Ходовая</p>
+						</div>
+						<div class="categories__card-btn">
+							<i class="ic"></i>
+						</div>
+					</div>
+					<div class="categories__card-pic">
+						<div class="pic-wrap">
+							<picture><source srcset="img/pic/services/2.webp" type="image/webp"><img src="img/pic/services/2.png" alt="pic"></picture>
+						</div>
+					</div>
+				</a>
+
+				<a href="service-page.html" class="categories__card ">
+					<div class="categories__card-info">
+						<div class="categories__card-title">
+							<span>Ремонт</span>
+							<p>КПП, АКПП</p>
+						</div>
+						<div class="categories__card-btn">
+							<i class="ic"></i>
+						</div>
+					</div>
+					<div class="categories__card-pic">
+						<div class="pic-wrap">
+							<picture><source srcset="img/pic/services/3.webp" type="image/webp"><img src="img/pic/services/3.png" alt="pic"></picture>
+						</div>
+					</div>
+				</a>
+
+				<a href="service-page.html" class="categories__card ">
+					<div class="categories__card-info">
+						<div class="categories__card-title">
+							<span>Ремонт</span>
+							<p>Кузов</p>
+						</div>
+						<div class="categories__card-btn">
+							<i class="ic"></i>
+						</div>
+					</div>
+					<div class="categories__card-pic">
+						<div class="pic-wrap">
+							<picture><source srcset="img/pic/services/4.webp" type="image/webp"><img src="img/pic/services/4.png" alt="pic"></picture>
+						</div>
+					</div>
+				</a>
+
+				<a href="service-page.html" class="categories__card ">
+					<div class="categories__card-info">
+						<div class="categories__card-title">
+							<span>Ремонт</span>
+							<p>Редукторы</p>
+						</div>
+						<div class="categories__card-btn">
+							<i class="ic"></i>
+						</div>
+					</div>
+					<div class="categories__card-pic">
+						<div class="pic-wrap">
+							<picture><source srcset="img/pic/services/5.webp" type="image/webp"><img src="img/pic/services/5.png" alt="pic"></picture>
+						</div>
+					</div>
+				</a>
+
+				<a href="service-page.html" class="categories__card ">
+					<div class="categories__card-info">
+						<div class="categories__card-title">
+							<span>Ремонт</span>
+							<p>Пневматика Гидравлика</p>
+						</div>
+						<div class="categories__card-btn">
+							<i class="ic"></i>
+						</div>
+					</div>
+					<div class="categories__card-pic">
+						<div class="pic-wrap">
+							<picture><source srcset="img/pic/services/6.webp" type="image/webp"><img src="img/pic/services/6.png" alt="pic"></picture>
+						</div>
+					</div>
+				</a>
+
+				<a href="service-page.html" class="categories__card ">
+					<div class="categories__card-info">
+						<div class="categories__card-title">
+							<span>Ремонт</span>
+							<p>Топливная система</p>
+						</div>
+						<div class="categories__card-btn">
+							<i class="ic"></i>
+						</div>
+					</div>
+					<div class="categories__card-pic">
+						<div class="pic-wrap">
+							<picture><source srcset="img/pic/services/7.webp" type="image/webp"><img src="img/pic/services/7.png" alt="pic"></picture>
+						</div>
+					</div>
+				</a>
+
+				<a href="service-page.html" class="categories__card ">
+					<div class="categories__card-info">
+						<div class="categories__card-title">
+							<span>Ремонт</span>
+							<p>Форсунки ТНВД</p>
+						</div>
+						<div class="categories__card-btn">
+							<i class="ic"></i>
+						</div>
+					</div>
+					<div class="categories__card-pic">
+						<div class="pic-wrap">
+							<picture><source srcset="img/pic/services/8.webp" type="image/webp"><img src="img/pic/services/8.png" alt="pic"></picture>
+						</div>
+					</div>
+				</a>
+
+
+			</div>
+
 		</div>
 	</div>
 </section>
 	</main>
 
 	<footer class="footer">
-	<div class="cnt">
-		<div class="row-auto footer__row">
-
-			<div class="footer__logo-wrap">
-				<div class="footer__brand">
-					<a href="#" class="site-logo">
-						<img src="img/icons/site-brand/site-brandFooter.svg" loading="lazy" width="120" height="29"
-							alt="main logo">
-					</a>
+	<div class="cnt footer__cnt2">
+		<div class="row-auto footer__row2">
+			<div class="footer__contacts">
+				<div class="footer__desc">
+					<p>&#169; 2023, все права защищены.</p>
 				</div>
-				<div class="cnt-social">
 
-					<div class="scl-app-box">
-						<a href="mailto:sendmail@mail.com" target="_blank" rel="noopener noreferrer" aria-label="email">
-							<img src="./img/icons/social/ic-eml.svg" alt="email">
-						</a>
-					</div>
+				<div class="cnt-tme">
+					<i class="ic">
+					</i>
+					<p>Пн-Вс: 9:30-19:30</p>
+				</div>
 
-					<div class="scl-app-box">
-						<a href="https://www.vk.com" target="_blank" rel="noopener noreferrer" aria-label="vk">
-							<img src="./img/icons/social/ic-vk.svg" alt="vk">
-						</a>
-					</div>
+				<div class="cnt-adr">
+					<i class="ic">
+					</i>
+					<p>ул. Двадцати Шести Бакинских Комиссаров, дом 5, офис 4</p>
+				</div>
 
-					<div class="scl-app-box">
-						<a href="https://telegram.org" target="_blank" rel="noopener noreferrer" aria-label="telegram">
-							<img src="./img/icons/social/ic-tlg.svg" alt="telegram">
-						</a>
-					</div>
+				<div class="cnt-eml">
+					<i class="ic">
+					</i>
+					<a href="mailto:sendmail@mail.com">sendmail@mail.com</a>
+				</div>
 
-					<div class="scl-app-box">
-						<a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer"
-							aria-label="whatsapp">
-							<img src="./img/icons/social/ic-wts.svg" alt="whatsapp">
-						</a>
-					</div>
-
+				<div class="cnt-phn">
+					<i class="ic">
+					</i>
+					<a href="tel:0(000)-00-00">8 (495) 926-10-67</a>
 				</div>
 			</div>
-
-			<div class="footer__nav-wrap">
-				<nav class="navmenu sec-nav">
-					<div class="sec-nav__btn-wrap">
-						<span>Меню</span>
-						<button class="btn-as-ic sec-nav__btn j-sec-nav-ic">
-							<i class="ic-nav-mnu">
-							</i>
-						</button>
-					</div>
-					<div class="sec-nav__nav-items">
-						<ul>
-							<li><a href="">Каталог</a></li>
-							<li><a href="">Услуги</a></li>
-							<li><a href="">О нас</a></li>
-							<li><a href="">Отзывы</a></li>
-							<li><a href="">Партнеры</a></li>
-							<li><a href="">Контакты</a></li>
-						</ul>
-					</div>
-				</nav>
-
-				<div class="footer__links">
-					<a href="#">Политика конфиденциальности</a>
-					<a href="#">Договор оферты</a>
-				</div>
-			</div>
-
 		</div>
 	</div>
-
-	<section class="footer__sct2">
-		<div class="cnt footer__cnt2">
-			<div class="row-auto footer__row2">
-				<div class="footer__contacts">
-					<div class="footer__desc">
-						<p>&#169; 2023, все права защищены.</p>
-					</div>
-
-					<div class="cnt-tme">
-						<i class="ic">
-						</i>
-						<p>Пн-Вс: 9:30-19:30</p>
-					</div>
-
-					<div class="cnt-adr">
-						<i class="ic">
-						</i>
-						<p>ул. Двадцати Шести Бакинских Комиссаров, дом 5, офис 4</p>
-					</div>
-
-					<div class="cnt-eml">
-						<i class="ic">
-						</i>
-						<a href="mailto:sendmail@mail.com">sendmail@mail.com</a>
-					</div>
-
-					<div class="cnt-phn">
-						<i class="ic">
-						</i>
-						<a href="tel:0(000)-00-00">8 (495) 926-10-67</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="btn-up-wrap">
-		<div class="btn-as-ic btn-up">
-			<i class="ic ic-arr"></i>
-		</div>
-	</div>
-
 </footer>
 
 	<section class="navofc" tabindex="-1">
@@ -519,7 +558,9 @@
 </div>
 
 
-	<script src="js/script.min.js?_v=20240117075612"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=038f75a4-dd2c-4596-9e17-1846787c80ac&lang=ru_RU&_v=20240117174048"></script>
+
+<script src="js/script.min.js?_v=20240117174048"></script>
 
 </body>
 
