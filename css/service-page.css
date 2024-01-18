@@ -2025,7 +2025,7 @@ a:active::before {
   height: 8px;
   top: 44%;
   left: 10%;
-  content: 0;
+  content: "";
   border-radius: 50%;
   background-color: white;
 }

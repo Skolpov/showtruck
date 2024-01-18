@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240118101954">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240118110923">
 
 	<title>«Truck Repair» — Реомнт грузовиков в Омске</title>
 
@@ -130,57 +130,55 @@
 		<div class="row fsc-banner__row">
 			<div class="fsc-banner__content">
 				<div class="fsc-banner__title">
-					<h1 class="wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
-						Ремонт грузовых авто в Омске с приятными ценами и без задержек
+					<h1 class="wow animated fadeIn" data-wow-delay="2s">
+						Хорошей работы тебе и давай покажи себя во всей красе
 					</h1>
 				</div>
-				<div class="fsc-banner__items wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
-					<div class="fsc-banner__item">
-						<div class="ic">
-							<img src="img/icons/interface/ic-check.svg" alt="">
-						</div>
-						<p>Рассчитаем стоимость работ за 5 минут</p>
-					</div>
-					<div class="fsc-banner__item">
-						<div class="ic">
-							<img src="img/icons/interface/ic-check.svg" alt="">
-						</div>
-						<p>Професионально выполним ремонтные работы
-						</p>
-
-					</div>
-					<div class="fsc-banner__item">
-						<div class="ic">
-							<img src="img/icons/interface/ic-check.svg" alt="">
-						</div>
-						<p>Устранение любой неисправности в максимально короткие сроки</p>
-
-					</div>
-					<div class="fsc-banner__item">
-						<div class="ic">
-							<img src="img/icons/interface/ic-check.svg" alt="">
-						</div>
-						<p>Предоставим полную гарантию
-							на все виды работ</p>
-
-					</div>
+				<div class="fsc-banner__text">
+					<p>Описание услуги, предлагаем вам на заказ по размерам заказчика. Оптовые цены. Минимальные сроки.
+					</p>
 				</div>
-				<div class="fsc-banner__btns wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
-					<button class="btn-main btn-blink" data-fancybox data-src="#modal-clb">
+				<div class="fsc-banner__btns">
+					<button class="btn-main" data-fancybox data-src="#modal-clb">
 						Заказать звонок
-						<i class="ic ic-r"></i>
+					</button>
+					<button class="btn-main btn--str" data-fancybox data-src="#modal-info">
+						Подробнее
 					</button>
 				</div>
 			</div>
 
-			<div class="fsc-banner__num">
-				<div class="fsc-banner__counter">
-					<div class="counter-num">
-						<p>920</p>
+			<div class="fsc-banner__form-wrap">
+				<div class="form-vrt">
+
+					<div class="form-vrt__title">
+						<p>Заявка на звонок</p>
+						<span>Хотите узнать больше? Расскажем!</span>
 					</div>
-					<div class="counter-text">
-						<p>МАШИН ОТРЕМАНТИРОВАЛИ</p>
-					</div>
+
+					<form action="#" class="form-base" method="POST" id="form-fsc-banner" enctype="multipart/form-data">
+						<div class="form-base__inputs">
+							<label class="input-box form-base__inp">
+								<input type="text" name="username" placeholder="Имя" class="j-inp-nme" maxlength='12'
+									data-jsv-required="true" required>
+							</label>
+							<label class="input-box form-base__inp">
+								<input type="tel" name="tel" placeholder="Телефон" class="j-inp-phn" required>
+							</label>
+							<label class="input-box form-base__inp">
+								<input type="email" name="email" placeholder="Почта" class="j-inp-eml" required>
+							</label>
+						</div>
+						<button type="submit" class="btn-main js-frm-sbm form-base__btn">Отправить заявку</button>
+						<div class="form-base__check">
+							<div class="form-base__check-lbl">
+								<input class="input-check j-inp-chk" type="checkbox" value="" checked>
+								Вы соглашаетесь на
+								<span class="j-chk-dsb">условия обработки персональных данных</span>
+							</div>
+						</div>
+					</form>
+
 				</div>
 			</div>
 		</div>
@@ -479,7 +477,7 @@
 							<p class="aboutus__form-title wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
 								У вас есть вопросы? <span>Давайте мы скорей на них ответим!</span>
 							</p>
-							<form action="" class="form-base aboutus__form-body" method="POST" id="form-aboutus"
+							<form action="#" class="form-base aboutus__form-body" method="POST" id="form-aboutus"
 								enctype="multipart/form-data">
 								<div class="form-base__inputs">
 									<label class="input-box form-base__inp">
@@ -488,9 +486,8 @@
 								</div>
 								<button type="submit" class="btn-main form-base__btn">Отправить заявку</button>
 								<div class="form-base__check">
-									<div class="form-base__check-lbl  aboutus__check-lbl" for="checkAbtUs">
-										<input class="input-check j-inp-chk" type="checkbox" value="" id="checkAbtUs"
-											checked>
+									<div class="form-base__check-lbl  aboutus__check-lbl">
+										<input class="input-check j-inp-chk" type="checkbox" value="" checked>
 										Вы соглашаетесь на
 										<span class="j-chk-dsb">условия обработки персональных данных</span>
 									</div>
@@ -1114,7 +1111,7 @@
 					</div>
 					<div class="form final__form">
 
-						<form action="" class="form-base" method="POST" id="form-final" enctype="multipart/form-data">
+						<form action="#" class="form-base" method="POST" id="form-final" enctype="multipart/form-data">
 
 							<div class="form-base__inputs final__form-inputs">
 								<label class="input-box form-base__inpt">
@@ -1129,9 +1126,8 @@
 							<button type="submit" class="btn-main form-base__btn">Отправить заявку</button>
 
 							<div class="form-base__check">
-								<div class="form-base__check-lbl final__check-lbl" for="checkFinal">
-									<input class="input-check j-inp-chk" type="checkbox" value="" id="checkFinal"
-										checked>
+								<div class="form-base__check-lbl final__check-lbl">
+									<input class="input-check j-inp-chk" type="checkbox" value="" checked>
 									Вы соглашаетесь на
 									<span class="j-chk-dsb">условия обработки персональных данных</span>
 								</div>
@@ -1271,7 +1267,7 @@
 			<span>Хотите узнать больше? Расскажем!</span>
 		</div>
 
-		<form action="" class="form-base" method="POST" id="form-modal" enctype="multipart/form-data">
+		<form action="#" class="form-base" method="POST" id="form-modal" enctype="multipart/form-data">
 			<div class="form-base__inputs">
 				<label class="input-box form-base__inp">
 					<input type="text" name="username" placeholder="Имя" class="j-inp-nme" maxlength='12'
@@ -1283,8 +1279,8 @@
 			</div>
 			<button type="submit" class="btn-main js-frm-sbm form-base__btn">Отправить заявку</button>
 			<div class="form-base__check">
-				<div class="form-base__check-lbl" for="checkFormCall">
-					<input class="input-check j-inp-chk" type="checkbox" value="" id="checkFormCall" checked>
+				<div class="form-base__check-lbl">
+					<input class="input-check j-inp-chk" type="checkbox" value="" checked>
 					Вы соглашаетесь на
 					<span class="j-chk-dsb">условия обработки персональных
 						данных</span>
@@ -1380,9 +1376,9 @@
 </div>
 
 
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=038f75a4-dd2c-4596-9e17-1846787c80ac&lang=ru_RU&_v=20240118101954"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=038f75a4-dd2c-4596-9e17-1846787c80ac&lang=ru_RU&_v=20240118110923"></script>
 
-<script src="js/script.min.js?_v=20240118101954"></script>
+<script src="js/script.min.js?_v=20240118110923"></script>
 
 
 </body>
