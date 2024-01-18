@@ -6459,7 +6459,7 @@ button.swiper-pagination-bullet {
   width: 100%;
   content: " ";
   display: block;
-  height: 60px;
+  height: 24px;
   background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(65%, rgba(255, 255, 255, 0)));
   background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 65%);
   opacity: 1;
@@ -7342,10 +7342,6 @@ html.with-fancybox header.hdr--fixed {
 
 /* ↓ Основа */
 
-.service {
-  background-color: rgba(138, 208, 86, 0.4);
-}
-
 .service__slider-pic a {
   display: block;
   -webkit-transition: opacity 0.2s ease-in-out 0ms;
@@ -7358,6 +7354,10 @@ html.with-fancybox header.hdr--fixed {
 
 .service__slider-pic a:hover::before {
   display: none;
+}
+
+.service__slider-pic a picture {
+  display: block;
 }
 
 /* ↑ ---- */
@@ -7502,8 +7502,8 @@ html.with-fancybox header.hdr--fixed {
 }
 
 .teammate__card-quote .shw-mre__con::after {
-  background: -webkit-gradient(linear, left bottom, left top, from(#2D2977), color-stop(65%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(0deg, #2D2977 0%, rgba(255, 255, 255, 0) 65%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#2D2977), color-stop(65%, rgba(47, 39, 116, 0))) !important;
+  background: linear-gradient(0deg, #2D2977 0%, rgba(47, 39, 116, 0) 65%) !important;
 }
 
 .teammate__card-quote i {
@@ -7786,10 +7786,6 @@ html.with-fancybox header.hdr--fixed {
   max-width: 260px;
 }
 
-[class*=copyrights-pane] {
-  display: none !important;
-}
-
 /* ↑ ---- */
 
 /* == КОНЕЦ БЛОКА « ЯНДЕКС-КАРТА И КОНТАКТЫ » */
@@ -7837,7 +7833,7 @@ html.with-fancybox header.hdr--fixed {
 .footer__desc p,
 .footer__copyright p {
   font-size: 11px;
-  color: #D1CFED;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* ↑ ---- */
@@ -8479,21 +8475,9 @@ html.with-fancybox header.hdr--fixed {
   }
 
   .footer__wrap {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     max-width: 480px;
-    text-align: left;
     padding-left: 48px;
-  }
-
-  .footer__wrap > * {
-    margin-bottom: 0;
-  }
-
-  .footer__desc {
-    margin-right: 16px;
+    text-align: left;
   }
 }
 
@@ -8606,6 +8590,12 @@ html.with-fancybox header.hdr--fixed {
 
   .final .form-inputs > *:last-child {
     margin-right: 0;
+  }
+
+  .footer {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
   }
 }
 
@@ -9103,14 +9093,23 @@ html.with-fancybox header.hdr--fixed {
             justify-content: flex-start;
   }
 
-  .footer {
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+  .footer__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
-  .footer__wrap {
-    padding-left: 64px;
+  .footer__wrap > * {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .footer__wrap > *:last-child {
+    margin-right: 0;
   }
 }
 
@@ -9186,7 +9185,7 @@ html.with-fancybox header.hdr--fixed {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1140px) {
   .animate__animated {
     /*CSS transitions*/
     -webkit-transition-property: none !important;
