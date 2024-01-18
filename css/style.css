@@ -2217,7 +2217,7 @@ input[type=search]::-webkit-search-cancel-button {
 .input-box-srh input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-right-color: 0;
+  border-right-color: transparent;
 }
 
 .input-box-srh .ic-search-btn {
@@ -6420,14 +6420,12 @@ button.swiper-pagination-bullet {
 
 .cnt-social a {
   position: relative;
-  -webkit-transition: opacity 0.2s ease-in-out 0ms;
-  transition: opacity 0.2s ease-in-out 0ms;
   width: 100%;
   height: 100%;
   border: 1px solid transparent;
   border-radius: 50%;
-  -webkit-transition: opacity border ease-in-out 0ms;
-  transition: opacity border ease-in-out 0ms;
+  -webkit-transition: opacity 0.2s ease-in-out 0ms, border 0.2s ease-in-out 0ms;
+  transition: opacity 0.2s ease-in-out 0ms, border 0.2s ease-in-out 0ms;
 }
 
 .cnt-social a:before {
@@ -7226,14 +7224,14 @@ html.with-fancybox header.hdr--fixed {
 .our-num {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 16px;
 }
 
 .our-num > * {
-  -ms-grid-column-span: 6;
-  grid-column: 6 span;
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
 }
 
 .our-num__item {
@@ -7872,6 +7870,11 @@ html.with-fancybox header.hdr--fixed {
     margin-right: 16px;
   }
 
+  .our-num > * {
+    -ms-grid-column-span: 2;
+    grid-column: 2 span;
+  }
+
   .teammate__card-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8310,11 +8313,6 @@ html.with-fancybox header.hdr--fixed {
 
   .aboutus__form-body .form-base__btn {
     margin-bottom: 0;
-  }
-
-  .our-num > * {
-    -ms-grid-column-span: 4;
-    grid-column: 4 span;
   }
 
   .our-num > *:last-child {
